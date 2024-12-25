@@ -7,17 +7,19 @@
     <title> {% block title %}
         Blog App
         {% endblock  %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
-        <h1>Blog List</h1>
         <nav>
-            <ul>
+            {% comment %} <ul>
                 <li><a href="{% url 'home' %}">Home </a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul>
+            </ul> {% endcomment %}
+            <a href="/"> Home</a>
+            <a href="/about"> Pbout</a>
+            <a href="/"> Posts</a>
         </nav>
     </header>
     <main>
