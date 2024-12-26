@@ -10,24 +10,17 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <header>
         <nav>
-            {% comment %} <ul>
-                <li><a href="{% url 'home' %}">Home </a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul> {% endcomment %}
             <a href="/"> Home</a>
             <a href="/about"> Pbout</a>
-            <a href="/"> Posts</a>
+            <a href="/posts"> Posts</a>
         </nav>
-    </header>
     <main>
         {% block content %}
         {% endblock %}
     </main>
     <footer>
-        <p>&copy; 2023 BlogApp. All rights reserved.</p>
+        <p>&copy; 2024 BlogApp. All rights reserved.</p>
     </footer>
 </body>
   <script src="{% static "js/main.js" %}"></script>
